@@ -1,6 +1,12 @@
 module.exports = {
   use: [
-    '@neutrinojs/airbnb',
+    ['@neutrinojs/airbnb', {
+      eslint: {
+        rules: {
+          'linebreak-style': 'off',
+        }
+      }
+    }],
     [
       '@neutrinojs/react',
       {

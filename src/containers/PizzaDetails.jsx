@@ -79,7 +79,7 @@ class PizzaDetails extends Component {
               subheader={`${pizza.price} €`}
             />
             <Typography variant="subheading">
-            Ingredients:
+              Ingredients:
             </Typography>
             <Typography variant="body2">
               {pizza.ingredients.join(', ')}
