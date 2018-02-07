@@ -47,6 +47,7 @@ const mapStateToProps = state => ({
 export default withStyles(styles)(connect(mapStateToProps)(Layout));
 
 // export without higher-order-components for testing
+const PlainLayout = Layout;
 export {
-  Layout,
+  PlainLayout,
 };
