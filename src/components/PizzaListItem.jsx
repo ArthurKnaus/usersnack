@@ -2,6 +2,8 @@ import { Card, CardContent, Typography, CardMedia, ButtonBase } from 'material-u
 import { withStyles } from 'material-ui/styles';
 import PropTypes from 'prop-types';
 
+const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'EUR' });
+
 const styles = () => ({
   card: {
     display: 'flex',
@@ -20,6 +22,11 @@ const styles = () => ({
     flexDirection: 'column',
   },
   content: {
+    flex: '1 0 auto',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  ingredients: {
     flex: '1 0 auto',
   },
   image: {
@@ -43,8 +50,11 @@ const PizzaListItem = (props) => {
             <Typography variant="headline">
               {pizza.name}
             </Typography>
-            <Typography variant="subheading" color="textSecondary">
+            <Typography className={classes.ingredients} variant="subheading" color="textSecondary">
               {pizza.ingredients.join(', ')}
+            </Typography>
+            <Typography variant="subheading" color="textSecondary">
+              {formatter.format(pizza.price)}
             </Typography>
           </CardContent>
         </div>

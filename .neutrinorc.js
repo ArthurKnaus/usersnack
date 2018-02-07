@@ -4,6 +4,7 @@ module.exports = {
       eslint: {
         rules: {
           'linebreak-style': 'off',
+          'react/forbid-prop-types': 'off',
         }
       }
     }],
