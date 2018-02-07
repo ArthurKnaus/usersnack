@@ -43,7 +43,7 @@ class PizzaForm extends Component {
 
   getAlertText() {
     const sb = [];
-    sb.push(`You have successfuly ordered a ${this.props.pizza.name}`);
+    sb.push(`You have successfully ordered a ${this.props.pizza.name}`);
     if (this.state.selectedItems.length > 0) {
       sb.push('Extras:');
       this.state.selectedItems.forEach(e => sb.push(` -${e}`));
