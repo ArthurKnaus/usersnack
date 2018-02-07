@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PizzaForm should match snapshot 1`] = `
+<div>
+  <header
+    className="MuiPaper-root-9 MuiPaper-shadow4-15 MuiAppBar-root-1 MuiAppBar-positionFixed-2 MuiAppBar-colorPrimary-7 mui-fixed"
+  >
+    <div
+      className="MuiToolbar-root-36 MuiToolbar-gutters-37"
+    >
+      <h2
+        className="MuiTypography-root-38 MuiTypography-title-44 MuiTypography-colorInherit-57"
+      >
+        testTitle
+      </h2>
+    </div>
+  </header>
+  <div
+    className="MuiGrid-typeContainer-62 MuiGrid-spacing-xs-16-84 MuiGrid-justify-xs-center-79"
+  >
+    <div
+      className="MuiGrid-typeItem-63 MuiGrid-grid-xs-12-99 MuiGrid-grid-md-10-123 MuiGrid-grid-lg-8-134 MuiGrid-grid-xl-8-147"
+    >
+      <div
+        id="child"
+      />
+    </div>
+  </div>
+</div>
+`;
